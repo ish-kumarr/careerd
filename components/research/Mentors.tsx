@@ -13,23 +13,23 @@ import {
 import { useState, useEffect } from 'react'
 
 const mentors = [
-   {
-    name: "Shreyansh Jain",
-    title: "Research Associate",
-    institution: "Delhi School of Economics",
-    image: "https://i.imgur.com/0Ag8RQt.jpeg",
-    linkedin: "https://www.linkedin.com/in/jainshreyansh108/",
-    expertise: ["Economics", "Data Analysis", "Econometrics"],
-    quote: "Empowering students to discover their research potential and make meaningful contributions to academia."
+  {
+    "name": "Shreyansh Jain",
+    "title": "Master's Student in Economics",
+    "institution": "Delhi School of Economics",
+    "image": "https://i.imgur.com/0Ag8RQt.jpeg",
+    "linkedin": "https://www.linkedin.com/in/jainshreyansh108/",
+    "expertise": ["Economics", "Data Analysis", "Statistical Modeling", "Research"],
+    "quote": "Blending academic expertise with real-world data insights for impactful research and consultancy."
   },
   {
-    name: "Dr. Gopi",
-    title: "Professor",
-    institution: "IIM Bangalore",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop",
-    linkedin: "#",
-    expertise: ["Management", "Strategy", "Organizational Behavior"],
-    quote: "Bridging the gap between academic theory and real-world applications through innovative research."
+    "name": "Dr. Gopi",
+    "title": "Professor",
+    "institution": "IIM Bangalore",
+    "image": "https://i.imgur.com/wPOtw0f.png",
+    "linkedin": "#",
+    "expertise": ["Management", "Strategy", "Organizational Behavior"],
+    "quote": "Bridging the gap between academic theory and real-world applications through innovative research."
   },
   {
     "name": "Dr. Richa Khanna",
@@ -39,44 +39,45 @@ const mentors = [
     "linkedin": "https://www.linkedin.com/in/jainshreyansh108/",
     "expertise": ["Clinical Psychology", "Cognitive Neuroscience", "Behavioral Research"],
     "quote": "Inspiring students to explore the depths of human behavior and cognition through research."
-},
-  {
-    name: "Dr. Mukherji",
-    title: "Professor",
-    institution: "IIM Bangalore",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop",
-    linkedin: "#",
-    expertise: ["Finance", "Economics", "Financial Modeling"],
-    quote: "Guiding the next generation of researchers to push boundaries and create impactful knowledge."
   },
   {
-    name: "Dr. Rajiv Sethi",
-    title: "Professor",
-    institution: "Barnard College, Columbia University",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop",
-    linkedin: "https://www.linkedin.com/in/rajiv-sethi-0475a3a/",
-    expertise: ["Game Theory", "Economic Theory", "Microeconomics"],
-    quote: "Fostering critical thinking and analytical skills through collaborative research projects."
+    "name": "Dr. Mukherji",
+    "title": "Professor",
+    "institution": "IIM Bangalore",
+    "image": "https://i.imgur.com/wPOtw0f.png",
+    "linkedin": "#",
+    "expertise": ["Finance", "Economics", "Financial Modeling"],
+    "quote": "Guiding the next generation of researchers to push boundaries and create impactful knowledge."
   },
   {
-    name: "Dr. Waheeda Khan",
-    title: "Professor",
-    institution: "Research Expert",
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQGtWJ-Uo62K7w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1679756084466?e=1746057600&v=beta&t=b-whg8y_jJJAj6fW9f-DvtctpWm4cWSJSLjUWHN3Tr0",
-    linkedin: "https://www.linkedin.com/in/dr-waheeda-khan-301b5810/",
-    expertise: ["Psychology", "Behavioral Research", "Qualitative Research"],
-    quote: "Helping students develop research skills that will serve them throughout their academic careers."
+    "name": "Dr. Rajiv Sethi",
+    "title": "Professor of Economics",
+    "institution": "Barnard College, Columbia University & Santa Fe Institute",
+    "image": "https://i.imgur.com/wPOtw0f.png",
+    "linkedin": "https://www.linkedin.com/in/rajiv-sethi-0475a3a/",
+    "expertise": ["Game Theory", "Economic Theory", "Microeconomics"],
+    "quote": "Fostering critical thinking and analytical skills through collaborative research projects."
   },
   {
-    name: "Dr. Piyusha Majumdar",
-    title: "Research Professor",
-    institution: "Research Expert",
-    image: "https://media.licdn.com/dms/image/v2/D4D03AQHLSF76-OJtRg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686293058158?e=1746057600&v=beta&t=yob06-lmp5kRYIk5lce7PCgH9JHrOek_kCksiEmtlK8",
-    linkedin: "https://www.linkedin.com/in/piyushamajumdar/",
-    expertise: ["Research Methodology", "Data Analysis", "Statistical Modeling"],
-    quote: "Transforming research ideas into impactful publications through structured guidance and mentorship."
+    "name": "Dr. Waheeda Khan",
+    "title": "Professor, Faculty of Behavioural Sciences & Advisor",
+    "institution": "SGT University",
+    "image": "https://media.licdn.com/dms/image/v2/D4D03AQGtWJ-Uo62K7w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1679756084466?e=1746057600&v=beta&t=b-whg8y_jJJAj6fW9f-DvtctpWm4cWSJSLjUWHN3Tr0",
+    "linkedin": "https://www.linkedin.com/in/dr-waheeda-khan-301b5810/",
+    "expertise": ["Psychology", "Mental Health", "Counseling", "Behavioral Research"],
+    "quote": "Empowering research and education in psychology, mental health, and well-being through global collaborations."
+  },
+  {
+    "name": "Dr. Piyusha Majumdar",
+    "title": "Associate Professor & Implementation Science Researcher",
+    "institution": "IIHMR University",
+    "image": "https://media.licdn.com/dms/image/v2/D4D03AQHLSF76-OJtRg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1686293058158?e=1746057600&v=beta&t=yob06-lmp5kRYIk5lce7PCgH9JHrOek_kCksiEmtlK8",
+    "linkedin": "https://www.linkedin.com/in/piyushamajumdar/",
+    "expertise": ["Public Health", "Implementation Science", "Global Health Research"],
+    "quote": "Advancing public health through implementation research and cross-disciplinary collaborations."
   }
-]
+];
+
 
 const CarouselProgress = ({ current, total }) => (
   <div className="flex items-center gap-4 mt-8 md:mt-12">
